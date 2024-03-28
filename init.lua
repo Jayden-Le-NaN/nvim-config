@@ -5,6 +5,13 @@ require('base/autocmds')
 
 
 ------------------------------插件部分------------------------------
-require('plugin/lazy') 						-- [管理]lazy: 插件包管理工具
-require('plugin/themes/color_theme')        -- [主题]deus: 使用deus主题
+require('plugin/lazy') 						-- [管理]lazy               :       插件包管理工具
+require('plugin/themes/color_theme')        -- [主题]deus               :       使用deus主题
+require('plugin/lsp/mason')                 -- [管理]mason              :       lsp包管理工具
+require('plugin/lsp/mason_lspconfig')       -- [商场]mason-lspconfig    :       lsp marketplace
+require('plugin/lsp/nvim_lspconfig')        -- [工具]nvim_lspconfig     :       加载lsp
+require('plugin/lsp/nvim_cmp')              -- [工具]nvim_cmp           :       代码补全工具
 
+------------------------------lsp部分------------------------------
+require('lsp/lua_ls')                       -- [lsp] lua_ls             :       lua lsp server
+require('lsp/clangd')                       -- [lsp] clangd             :       C/C++/CUDA lsp server
