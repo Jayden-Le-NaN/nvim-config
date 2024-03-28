@@ -8,6 +8,8 @@ vim.o.relativenumber = true
 vim.o.cursorline = true
 vim.o.guifont = "RobotoMono:16"
 vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
 
 -- 与系统剪切板对接
 vim.o.clipboard = "unnamed"
