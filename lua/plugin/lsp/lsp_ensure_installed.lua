@@ -3,6 +3,9 @@
 local lsp_ensure_installed_list = {
     "lua_ls",                   -- lus lsp
     "clangd",                   -- C/C++ lsp
+    "neocmake",                 -- cmake lsp
+    "gopls",                    -- go lsp
+    "quick_lint_js",            -- JavaScript lsp
 }
 
 return lsp_ensure_installed_list
