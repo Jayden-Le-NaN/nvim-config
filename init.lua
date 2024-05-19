@@ -20,3 +20,4 @@ require('lsp/clangd')                       -- [lsp] clangd             :       
 require('lsp/neocmake')                     -- [lsp] neocmake           :       cmake lsp 
 require('lsp/gopls')                        -- [lsp] gopls              :       go lsp 
 require('lsp/quick_lint_js')                -- [lsp] quick-lint-js      :       JavaScript lsp
+require('lsp/matlab_ls')                    -- [lsp] matlab_ls          :       matlab lsp
