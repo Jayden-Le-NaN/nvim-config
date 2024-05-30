@@ -1,10 +1,21 @@
 local plugins = {
-    ------------------------------themes------------------------------
-    { -- color scheme
+    ------------------------------beautify------------------------------
+    { -- scheme
         "ajmwagar/vim-deus",
     },
 
-    ------------------------------fzf------------------------------
+    { -- line
+        "mvllow/modes.nvim",
+        config = function()
+            require('smoothcursor').setup()
+        end
+    },
+
+    { -- cursor
+        "gen740/SmoothCursor.nvim",
+    },
+
+    ------------------------------Telescope------------------------------
     {
         -- telescope
         event = "VeryLazy",
@@ -73,6 +84,7 @@ local plugins = {
             "nvim-tree/nvim-web-devicons",
         },
     },
+
 
 }
 

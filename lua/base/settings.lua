@@ -11,5 +11,9 @@ vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
 
+-- 设置文本编码格式
+vim.opt.encoding = "utf-8"                                      -- 默认编码格式
+vim.opt.fileencodings = "utf-8, gb2312, gbk, gb18030"           -- 支持编码列表
+
 -- 与系统剪切板对接
 vim.o.clipboard = "unnamed"
