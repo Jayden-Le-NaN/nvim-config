@@ -14,7 +14,8 @@ require('plugin/lsp/mason_lspconfig')       -- [商场]mason-lspconfig    :     
 require('plugin/lsp/nvim_lspconfig')        -- [工具]nvim_lspconfig     :       加载lsp
 require('plugin/lsp/nvim_cmp')              -- [工具]nvim_cmp           :       代码补全工具
 require('plugin/miscellaneous/undotree')    -- [工具]undotree           :       可选回退可视化
-require('plugin/miscellaneous/nvim_tree')
+require('plugin/miscellaneous/nvim_tree')   -- [工具]nvim_tree          :       文件树
+require('plugin/miscellaneous/bookmarks')   -- [工具]bookmarks          :       打标签
 
 ------------------------------lsp部分------------------------------
 require('lsp/lua_ls')                       -- [lsp] lua_ls             :       lua lsp 

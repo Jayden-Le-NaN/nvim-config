@@ -21,10 +21,11 @@ local plugins = {
         event = "VeryLazy",
         cmd = "Telescope",
         keys = { -- key map
-            { "<leader>p",  ":Telescope find_files<CR>", desc = "find files" },
-            { "<leader>P",  ":Telescope live_grep<CR>",  desc = "grep file" },
-            { "<leader>rs", ":Telescope resume<CR>",     desc = "resume" },
-            { "<leader>o",  ":Telescope oldfiles<CR>",   desc = "oldfiles" },
+            { "<leader>p",  ":Telescope find_files<CR>",        desc = "find files" },
+            { "<leader>P",  ":Telescope live_grep<CR>",         desc = "grep file" },
+            { "<leader>rs", ":Telescope resume<CR>",            desc = "resume" },
+            { "<leader>o",  ":Telescope oldfiles<CR>",          desc = "oldfiles" },
+            { "<leader>m",  ":Telescope bookmarks list<CR>",    desc = "bookmarks"},
         },
         'nvim-telescope/telescope.nvim',
         dependencies = { 'nvim-lua/plenary.nvim' },
@@ -85,6 +86,9 @@ local plugins = {
         },
     },
 
+    {
+        "tomasky/bookmarks.nvim",
+    },
 
 }
 
