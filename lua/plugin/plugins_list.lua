@@ -6,13 +6,17 @@ local plugins = {
 
     { -- line
         "mvllow/modes.nvim",
-        config = function()
-            require('smoothcursor').setup()
+        config = function() require('smoothcursor').setup()
         end
     },
 
     { -- cursor
         "gen740/SmoothCursor.nvim",
+    },
+
+    { -- lualine
+        "nvim-lualine/lualine.nvim",
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
     },
 
     ------------------------------Telescope------------------------------
@@ -66,6 +70,15 @@ local plugins = {
         }
     },
 
+    ------------------------------matlab plugin------------------------------
+    {
+        "daeyun/vim-matlab",
+    },
+
+    ------------------------------git------------------------------
+    {
+        "sindrets/diffview.nvim",
+    },
     ------------------------------Miscellaneous------------------------------
     {
         -- undo tree
@@ -86,10 +99,22 @@ local plugins = {
         },
     },
 
-    {
+    {   -- marker
         "tomasky/bookmarks.nvim",
     },
 
+    {   -- tab
+        "ghillb/cybu.nvim",
+        dependencies = {
+            "nvim-tree/nvim-web-devicons",
+            "nvim-lua/plenary.nvim",
+        },
+    },
+
+    {
+        "sidebar-nvim/sidebar.nvim",
+        branch = "main",
+    },
 }
 
 return plugins
