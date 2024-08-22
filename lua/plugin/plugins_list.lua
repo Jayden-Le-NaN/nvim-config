@@ -2,6 +2,7 @@ local plugins = {
     ------------------------------beautify------------------------------
     { -- scheme
         "ajmwagar/vim-deus",
+        priority = 100,                     -- 设置优先级
     },
 
     { -- line
@@ -79,6 +80,24 @@ local plugins = {
     {
         "sindrets/diffview.nvim",
     },
+
+    ------------------------------Debug tool------------------------------
+
+    ------------------------------Neovim basic tool------------------------------
+    {
+        "nvim-lua/plenary.nvim",
+    },
+
+    ------------------------------terminal------------------------------
+    {
+        'akinsho/toggleterm.nvim',
+        version = "*",
+        keys = {
+            {"T", ":ToggleTerm<CR>", desc="open toggleterm"},
+        },
+        config = true
+
+    },
     ------------------------------Miscellaneous------------------------------
     {
         -- undo tree
@@ -103,15 +122,21 @@ local plugins = {
         "tomasky/bookmarks.nvim",
     },
 
+    -- {   -- tab
+    --     "ghillb/cybu.nvim",
+    --     dependencies = {
+    --         "nvim-tree/nvim-web-devicons",
+    --         "nvim-lua/plenary.nvim",
+    --     },
+    -- },
+
     {   -- tab
-        "ghillb/cybu.nvim",
-        dependencies = {
-            "nvim-tree/nvim-web-devicons",
-            "nvim-lua/plenary.nvim",
-        },
+        "akinsho/bufferline.nvim",
+        version = "*",
+        dependencies = "nvim-tree/nvim-web-devicons",
     },
 
-    {
+    {   -- sidebar
         "sidebar-nvim/sidebar.nvim",
         branch = "main",
     },

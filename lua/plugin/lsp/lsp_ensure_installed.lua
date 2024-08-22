@@ -7,6 +7,7 @@ local lsp_ensure_installed_list = {
     "gopls",                    -- go lsp
     "quick_lint_js",            -- JavaScript lsp
     "matlab_ls",                -- matlab lsp
+    "pyright",                  -- python lsp
 }
 
 return lsp_ensure_installed_list
