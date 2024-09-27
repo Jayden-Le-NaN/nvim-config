@@ -17,3 +17,7 @@ vim.opt.fileencodings = "utf-8, gb2312, gbk, gb18030"           -- 支持编码�
 
 -- 与系统剪切板对接
 vim.o.clipboard = "unnamed"
+
+-- 设置不同模式下的光标类型
+vim.opt.guicursor = "n-v-c:block"
+
